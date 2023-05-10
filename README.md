@@ -18,3 +18,5 @@ node .\howToSellJs_htmlcss\BACKEND\main.js
 
 # API_BAPE
 L'API_BAPE que nous avons créée pour ce projet est basée sur des articles BAPE. Les 26 articles sont stockées dans un fichier JSON.
+
+![readme](https://github.com/Nemomul/IAFRATE-MULLER-shopping-app/assets/113009615/e8a6140f-10aa-4e56-a4cc-1753b08af252)
