@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Store</title>
+    <link rel="stylesheet" href="https://cdn.materialdesignicons.com/5.4.55/css/materialdesignicons.min.css">
+    <link rel="stylesheet" href="style/navbar.css">
+    <link rel="stylesheet" href="style/carousel.css">
+    <link rel="stylesheet" href="style/carte.css">
+    <link rel="stylesheet" href="style/panier.css">
+    <link rel="stylesheet" href="style/footer.css">
+</head>         
+<body>
+    <header>
+        <nav>
+            <ul class="liens">
+                <li><a href="index.html">MEN</a></li>
+                <li><a href="index.html">WOMEN</a></li>
+                <li><a href="index.html">GALLERY</a></li>
+                <li><a href="index.html">LOOKBOOK</a></li>
+            </ul>
+            <h1 class="logo">
+                <a href="index.html">
+                    <img src="../BACKEND/img/logo/BAPE-Logo.png" alt="logo" class="logo_img">
+                </a>
+            </h1>
+            <ul class="liens">
+                <li><a href="index.html">STORE</a></li>
+                <li><a href="index.html">SEARCH</a></li>
+                <li><a href="index.html">WISHLIST</a></li>
+                <li><a href="index.html">ACCOUNT</a></li>
+                <li><label class="cart-icon" onclick="ShowPanier(); event.stopPropagation();"> <i class="mdi mdi-cart-variant"></i> PANIER</label></li>
+            </ul>
+            <div class="cart-ctn">
+                <h1 class="titre_panier">AJOUTER</h1>
+                <i class="close-icon" onclick="closeCart(); event.stopPropagation();">&#10005;</i>
+                <div class="cart-items"></div>
+                <div class="cart-total">
+                    <span class="cart-total-label">Articles :</span>
+                    <span class="cart-total-items">0</span>
+                    <br>
+                    <span class="cart-total-label">Total :</span>
+                    <span class="cart-total-price">0.00</span>
+                    <span>$</span>
+                    <br>
+                    <button class="clear-cart-button">SUPPRIMER LE PANIER</button>
+                    <br>
+                    <button class="bcommander">COMMANDER</button>
+                </div>
+            </div>
+            
+        </nav>
+    </header>
+
+
+<div class="carousel-container">
+    <div class="carousel">
+        <img src="../BACKEND/img/carousel/caroussel_2.jpg" alt="Image 1" class="active">
+        <img src="../BACKEND/img/carousel/caroussel_4.jpg" alt="Image 2">
+        <img src="../BACKEND/img/carousel/caroussel_1.jpg" alt="Image 3">
+        <img src="../BACKEND/img/carousel/caroussel_3.jpg" id="firstClone" alt="Image 4">
+    </div>
+    <button class="prev">&#8249;</button>
+    <button class="next">&#8250;</button>
+</div>
+
+<div class="filterCtn">
+
+    <label for="sexe" class="filterSexe">Sexe :</label>
+    <select id="sexe">
+        <option value="all">Tous</option>
+        <option value="Men">Homme</option>
+        <option value="Women">Femme</option>
+    </select>
+
+
+    <label for="type" class="filterType">Type :</label>
+    <select id="type">
+        <option value="all">Tous</option>
+        <option value="jackets">Veste</option>
+        <option value="sweaters">Sweat</option>
+        <option value="shoes">Chaussure</option>
+    </select>
+
+    <label for="color" class="filterColor">Couleur :</label>
+    <select id="color">
+        <option value="all">Tous</option>
+        <option value="Dark Grey">Dark Grey</option>
+        <option value="Grey">Grey</option>
+        <option value="White">White</option>
+        <option value="Red">Red</option>
+        <option value="Black">Black</option>
+        <option value="Blue">Blue</option>
+        <option value="Brown">Brown</option>
+        <option value="Pink">Pink</option>
+    </select>
+
+    <label for="available" class="filterAvailable">En stock :</label>
+    <select id="available">
+        <option value="all">Tous</option>
+        <option value="true">En stock</option>
+        <option value="false">Rupture de stock</option>
+    </select>
+</div>
+      
+
+<div class="box_ctn">
+    <div id="cards-container"></div>
+</div>
+    
+    <footer>
+        <div class="ctn-footer">
+                <div class="logo-liens-footer">
+                    <a class="logobape1" href="index.html">
+                        <img  class="logobape2" src="../BACKEND/img/logo/BAPE-Logo.png" alt="">
+                    </a>
+                    <div class="liens-sociaux">
+                        <a href="https://www.facebook.com/BAPE.OFFICIAL/" ><i class="mdi mdi-facebook"></i></a>
+                        <a href="https://twitter.com/BAPEOFFICIAL/" ><i class="mdi mdi-twitter"></i></a>
+                        <a href="https://www.instagram.com/bape_japan/" ><i class="mdi mdi-instagram"></i></a>
+                    </div>
+            </div>
+        </div>
+    </footer>
+    
+</body>
+<script src="js/panier.js"></script>
+<script src="js/carte.js"></script>
+<script src="js/carousel.js"></script>
+<script src="js/app.js"></script>
+
+</html> 

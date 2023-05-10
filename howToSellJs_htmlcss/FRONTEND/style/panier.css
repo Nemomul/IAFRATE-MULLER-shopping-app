@@ -1,0 +1,117 @@
+.cart-ctn{
+    width: 500px;
+    color: rgb(24, 26, 26);
+    background-color: rgb(255, 255, 255);
+    height: 100vh;
+    position: absolute;
+    top: 0px;
+    right: -500px;
+    z-index: 50;
+    transition: right 0.5s ease-in-out;
+    border: 0.5px solid rgb(185, 185, 185);
+    display: flex;
+    flex-direction: column;
+}
+
+.open-cart{
+    right: 0px;
+    overflow-y: auto;
+}
+
+.cart-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+    width: 480px;
+    
+}
+
+.cart-item-title {
+    font-size: 16px;
+}
+
+.cart-item-counter {
+    border-radius: 5px;
+}
+
+
+.titre_panier{
+    padding: 30px;
+    margin-bottom: 100px;
+}
+
+.close-icon {
+    cursor: pointer;
+    font-size: 24px;
+    position: absolute;
+    top: 10px; 
+    right: 10px; 
+    padding-right: 30px;
+    padding-top: 15px;
+    font-style: normal;
+}
+
+
+.cart-item-image{
+    margin-left: 20px;
+    width: 120px;
+}
+
+.cards-container{
+    display: flex;
+}
+
+.cart-total{
+    background-color: white;
+    bottom: 0;
+    position: fixed;
+    margin-left: 25px;
+    width: 450px;
+    border-top: 1px solid black;
+    font-size: 25px;
+
+}
+.bcommander{
+    cursor: pointer;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    border-radius: 0px;
+    width: 100%;
+    height: 50px;
+    font-size: 30px;
+    color: aliceblue;
+    background-color: black;
+}
+
+.bcommander:hover{
+    background-color: green;
+    transition: 0.5s;
+}
+
+.clear-cart-button {
+    margin-top: 20px;
+    font-size: 30px; 
+    cursor: pointer;
+    border-radius: 0px;
+    color: aliceblue;
+    background-color:black ;
+    width: 100%;
+    height: 50px;
+}
+
+.clear-cart-button:hover{
+    background-color: red;
+    transition: 0.5s;
+}
+
+.trash-icon2 {
+    font-size: 25px; 
+    cursor: pointer;
+    
+}
+
+.cart-total-label{
+    margin-top: 20px;
+}
+

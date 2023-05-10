@@ -1,0 +1,170 @@
+.titre-detail{
+    margin-left: calc(100%/4);
+    margin-top: 100px;
+    font-size: 30px;
+}
+
+.main-image {
+    width: 400px;
+    height: auto;
+    object-fit: cover;
+    object-position: center;
+    margin-left: 20px;
+  }
+
+
+  
+
+  .thumbnail-container {
+  display: flex;
+  justify-content: space-between;
+  
+  width: 200px;
+}
+
+.thumbnail {
+    width: 96px;
+    height: 96px;
+    margin: 5px;
+    cursor: pointer;
+    object-fit: cover;
+    border: 0.5px solid rgb(75, 75, 74);
+}
+
+.main-image-container {
+    margin-left: calc(100%/4);
+    width: 576px;
+    height: 576px;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .main-image {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain;
+  }
+  
+
+  .size-container {
+    margin-right: 20px;
+    align-self: center;
+  }
+  
+
+  .achterCtn{
+    background-color: rgb(209, 209, 209);
+    width: 464px;
+    height: fit-content;
+    padding-bottom: 20px;
+    border: 1px solid rgb(71, 71, 71);
+    margin-left: 1100px;
+    margin-top: -750px;
+
+  }
+
+  #product-size-select{
+    border-radius: 0px;
+    border: 1px solid black;
+    margin-top: 40px;
+    margin-left: 18px;
+    margin-right: 18px;
+    width: 428px;
+    height: 40px;
+    font-size: 20px;
+  }
+
+  .bcommanderDetail{
+    border-radius: 0px;
+    border: 1px solid black;
+    font-size: 30px;
+    color: white;
+    background-color: black;
+    margin-top: 50px;
+    margin-left: 18px;
+    width: 320px;
+    height: 60px;
+    cursor: pointer;
+    
+  }
+
+  #description {
+    margin-top: 50px;
+    margin-bottom: 50px;
+    margin-left: 25%; /* Positionne la div à 100%/4 */
+    font-size: 1.5rem; /* Augmente la taille de la police (modifiez la valeur selon vos préférences) */
+  }
+  
+
+  /*footer*/
+
+  .ctn-footer{
+    margin-top: 50px;
+    background-color: rgb(255, 255, 255);
+    width: 100%;
+    border-top: 1px solid black;
+}
+
+footer{
+
+    background-color: blue;
+    margin-top: 530px;
+}
+
+.logo-liens-footer{
+   padding-top: 20px;
+   padding-bottom: 20px;
+    width: 150px;
+    margin: auto;
+}
+
+.logobape2{
+    width: 120px;
+}
+
+footer i{
+    margin-left: 17px;
+}
+
+
+
+#product-size-buttons {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+#product-size-buttons button {
+  width: 50px;
+  height: 50px;
+  margin: 10px;
+  font-size: 20px;
+  border: 2px solid #ccc;
+  border-radius: 5px;
+  background-color: #fff;
+  cursor: pointer;
+}
+
+#product-size-buttons button.selected {
+  background-color: #007bff;
+  color: #fff;
+}
+
+#product-size-buttons button:hover:not(.selected) {
+  background-color: #f1f1f1;
+}
+
+.decrement-button{
+  margin-left: 20px;
+  font-size: 20px;
+  width: 20px;
+}
+.increment-button{
+  font-size: 20px;
+  width: 20px;
+}
+.cart-item-counter{
+  padding: 10px;
+}

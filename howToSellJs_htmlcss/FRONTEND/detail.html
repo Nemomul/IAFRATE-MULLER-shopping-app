@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Détail</title>
+    <link rel="stylesheet" href="https://cdn.materialdesignicons.com/5.4.55/css/materialdesignicons.min.css">
+    <link rel="stylesheet" href="style/navbar.css">
+    <link rel="stylesheet" href="style/panier.css">
+    <link rel="stylesheet" href="style/detail.css">
+    
+</head>
+<body>
+    <header>
+        <nav>
+            <ul class="liens">
+                <li><a href="index.html">MEN</a></li>
+                <li><a href="about.html">WOMEN</a></li>
+                <li><a href="contact.html">KIDS</a></li>
+                <li><a href="index.html">GALLERY</a></li>
+                <li><a href="about.html">NEWS</a></li>
+                <li><a href="contact.html">LOOKBOOK</a></li>
+            </ul>
+            <h1 class="logo">
+                <a href="index.html">
+                    <img src="../BACKEND/img/logo/BAPE-Logo.png" alt="logo" class="logo_img">
+                </a>
+            </h1>
+            <ul class="liens">
+                <li><a href="index.html">STORE</a></li>
+                <li><a href="about.html">SEARCH</a></li>
+                <li><a href="contact.html">WISHLIST</a></li>
+                <li><a href="index.html">ACCOUNT</a></li>
+                <li><label class="cart-icon" onclick="ShowPanier(); event.stopPropagation();"> <i class="mdi mdi-cart-variant"></i> PANIER</label></li>
+            </ul>
+            <div class="cart-ctn">
+                <h1 class="titre_panier">AJOUTER</h1>
+                <i class="close-icon" onclick="closeCart(); event.stopPropagation();">&#10005;</i>
+                <div class="cart-items"></div>
+                <div class="cart-total">
+                    <span class="cart-total-label">Articles :</span>
+                    <span class="cart-total-items">0</span>
+                    <br>
+                    <span class="cart-total-label">Total :</span>
+                    <span class="cart-total-price">0.00</span>
+                    <span>$</span>
+                    <br>
+                    <button class="clear-cart-button" onclick="clearCart(); event.stopPropagation();">SUPPRIMER LE PANIER</button>
+                    <br>
+                    <button class="bcommander">COMMANDER</button>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+
+<div id="product-container">
+  <div id="title-container"></div>
+  <div class="product-container">
+  </div>
+</div>
+
+<div id="description">
+    <h2>Description</h2>
+  </div>
+
+  <div class="achterCtn">
+    <div id="product-size-buttons"></div>
+
+    <button id="addToCartButton" class="bcommanderDetail" data-product-id="idDeVotreProduit" onclick="addToCart(event)">AJOUTER AU PANIER</button>
+    <button class="decrement-button">-</button>
+    <span class="cart-item-counter">1</span>
+    <button class="increment-button">+</button>
+       
+  </div>
+
+
+
+  <footer>
+    <div class="ctn-footer">
+            <div class="logo-liens-footer">
+                <a class="logobape1" href="index.html">
+                    <img  class="logobape2" src="../BACKEND/img/logo/BAPE-Logo.png" alt="">
+                </a>
+                <div class="liens-sociaux">
+                    <a href="https://www.facebook.com/BAPE.OFFICIAL/" ><i class="mdi mdi-facebook"></i></a>
+                    <a href="https://twitter.com/BAPEOFFICIAL/" ><i class="mdi mdi-twitter"></i></a>
+                    <a href="https://www.instagram.com/bape_japan/" ><i class="mdi mdi-instagram"></i></a>
+                </div>
+        </div>
+    </div>
+</footer>
+
+</body>
+<script src="js/detail.js"></script>
+<script src="js/panier.js"></script>
+</html>

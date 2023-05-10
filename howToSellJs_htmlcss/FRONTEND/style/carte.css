@@ -1,0 +1,145 @@
+.box_ctn {
+    margin-top: 100px;
+    width: 80%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: auto;
+}
+
+.boite {
+    position: relative;
+    cursor: pointer;
+    width: 230px;
+    height: 391px;
+    background-color: #ffffff;
+    margin: 10px;
+    border: 0.5px solid #e6e6e6;
+    transition: 0.3s;
+}
+
+.ctn_img{
+    height: 260px;
+}
+
+.img_carte{
+    
+    
+    height: auto;
+    width: 80%;
+    margin: auto;
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-top: 10%;
+   
+}
+
+.titre_carte{
+    margin: 10px;
+    font-size: 14px;
+    height: 40px;
+    text-align: center;
+}
+
+.prix_carte{
+    font-size: 20px;
+    margin-top: -20px;
+    padding: auto;
+    text-align: center;
+}
+
+.bouton_carte{
+    margin-top: 10%;
+}
+
+.bouton{
+    cursor: pointer;
+    width: 100%;
+    font-size: 17px;
+    border-radius: 0;
+    border: 0.05px solid #e2e2e2;
+}
+
+.bouton_panier{
+    cursor: pointer;
+    width: 100%;
+    font-size: 17px;
+    border-radius: 0;
+    border: 0.05px solid #e2e2e2;
+}
+
+#cards-container{
+    display: flex;
+    flex-wrap: wrap;
+}
+option{
+    background-color: lightgrey;
+    color: black;
+}
+select{
+    background-color: lightgrey;
+    color: black;
+}
+.filterCtn{
+    width: 1000px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 50px;
+}
+
+.filterSexe{
+    font-size: 20px;
+}
+
+.filterType{
+    margin-left: 20px;
+    font-size: 20px;
+}
+
+.filterColor{
+    margin-left: 20px;
+    font-size: 20px;
+}
+.filterAvailable{
+    margin-left: 20px;
+    font-size: 20px;
+}
+
+#sexe{
+    border: 1px solid rgb(73, 73, 73);
+    border-radius: 0px;
+    font-size: 20px;
+    width: 170px;
+}
+
+#type{
+    border: 1px solid rgb(73, 73, 73);
+    border-radius: 0px;
+    font-size: 20px;
+    width: 170px;
+}
+
+#color{
+    border: 1px solid rgb(73, 73, 73);
+    border-radius: 0px;
+    font-size: 20px;
+    width: 170px;
+}
+
+#available{
+    border: 1px solid rgb(73, 73, 73);
+    border-radius: 0px;
+    font-size: 20px;
+    width: 170px;
+}
+
+.original-price {
+    text-decoration: line-through;
+    margin-right: 10px;
+    color: #777;
+  }
+  
+  .reduced-price {
+    color: #d32f2f;
+    font-weight: bold;
+  }
