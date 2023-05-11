@@ -17,7 +17,7 @@ const _path = require("path");
 
 app.get("/img/:path", (req, res) => {
     let path = req.params.path.replace(/_/g, "/")
-    path = _path.resolve("howToSellJs_htmlcss/BACKEND/img/"+path+".jpg")
+    path = _path.resolve("img/"+path+".jpg")
     res.status(200).sendFile(path)
 })
 
